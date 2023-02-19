@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <form action="./user.jsp">
+      用户名文本框：<input class="out" type="text" name="name" /><br />
+      年龄文本框：&nbsp;&nbsp; <input class="out" type="text" name="age" /><br />
+      <label>性别：</label>
+        <input type="radio" name="gender" value="male" />男   <input type="radio" name="gender" value="female" />女<br />
+      地址文本框：<input class="out" type="text" name="address" /><br />
+      <router-link to="./components/user.vue">提交按钮</router-link>
+    </form>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+;``
+import User from './components/user.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    User
   }
 }
 </script>
